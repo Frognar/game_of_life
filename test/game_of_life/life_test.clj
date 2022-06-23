@@ -5,7 +5,7 @@
 (def cell [0 0])
 (defn take-neighbors [n] (->> cell neighbors-of (take n) set))
 
-(deftest neighbors-off-test
+(deftest neighbors-of-test
   (testing "has awareness of the neighbors of a cell"
     (is (= #{[-1 -1] [0 -1] [1 -1]
              [-1 0] #_cell [1 0]
